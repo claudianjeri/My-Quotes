@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Quote } from '@angular/compiler';
 
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
