@@ -1,5 +1,38 @@
 div.card {
-    width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.jumbotron {
+  position: relative;
+  /* min-width: 100%; */
+  background: burlywood;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  /* z-index: 1; */
+  display: block;
+  /* min-height: 100%; */
+  margin-bottom: 2%;
+}
+
+h1{
+    position: relative;
+    text-decoration-style: wavy;
+    animation-name: h1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-play-state: running; */
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+
+}
+@keyframes h1 {
+   
+    0%  {color: green; left:0px; top:0px;}
+    50%  {color: brown; left:500px; top:0px;}
+    70% {color: black; left:499px; top:0px;}
+    100% {color: green; left:0px; top:0px;}
 }

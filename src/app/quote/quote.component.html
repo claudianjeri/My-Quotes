@@ -1,25 +1,17 @@
-<!-- <div class="card-deck" *ngFor = "let qt of quote; let i = index"> -->
-<!-- <div class="card-body">
-        <blockquote class="blockquote">
-            <p id="{{i}}" class="text-left ">{{qt.qoute}}</p>
-            <footer class="blockquote-footer text-left"><cite title="">{{qt.by}}</cite></footer>
-          </blockquote>
-    </div> -->
-<!-- <h1> My Quotes </h1>
-<div class="card-body">
-  <blockquote class="blockquote">
-    <ul>
-      <div *ngFor='let qt of quotes'>
-        <li>{{qt.quote}}
-          <br> {{qt.author}}</li>
+<!-- FIRST SECTION -->
+
+  <div class="jumbotron">
+    <header>
+      <div class="content">
+        <div class="large-header">
+          <h1> My Quotes </h1>
+        </div>
       </div>
-    </ul>
-  </blockquote>
-</div> -->
+    </header>
+  </div>
 
-<h1> My Quotes </h1>
+<!-- Quotes display section -->
 <ul>
-
   <div class="card-columns">
     <div class="rounded">
       <div class="card p-3" *ngFor='let qt of quotes' style="background-color:aqua">
