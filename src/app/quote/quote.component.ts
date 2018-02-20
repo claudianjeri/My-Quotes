@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { HttpClient } from '@angular/common/http';
-import { Quote } from '@angular/compiler';
+// import { Quote } from '@angular/compiler';
+import { Quote } from './quote'
 
 
 @Component({
