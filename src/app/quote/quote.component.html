@@ -1,9 +1,12 @@
 <div class="card-deck" *ngFor = "let qt of quote; let i = index">
-    <div class="card-body">
+    <!-- <div class="card-body">
         <blockquote class="blockquote">
             <p id="{{i}}" class="text-left ">{{qt.qoute}}</p>
             <footer class="blockquote-footer text-left"><cite title="">{{qt.by}}</cite></footer>
           </blockquote>
-    </div>
- 
+    </div> -->
+    <ul> 
+        <li *ngFor='let qt of quotes'>{{quote.name}}</li>
+    </ul>
+    <button (click) = 'quoteDelete(true)'> X </button>
 </div>
