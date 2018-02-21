@@ -12,30 +12,12 @@
 
 <!-- Quotes display section -->
  <!-- page 1 -->
-<ul>
-  <div class="card-columns">
-    <div class="rounded">
-      <div class="card p-3" *ngFor='let qt of quotes1' style="background-color:aqua">
-        <button type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <blockquote class="blockquote">
-          {{qt.quote}}
-          <footer class="blockquote-footer text-left">
-            <cite title="">{{qt.author}}</cite>
-          </footer>
-        </blockquote>
-        <a target="blank" [href] = "'https://twitter.com/intent/tweet?text='+ quote"
-        class="btn btn-outline-success" style="opacity:2"><i class="fa fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>
-  <!-- </div> -->
-</ul>
+
+ <app-page-one></app-page-one>
 
 <!-- page 2 -->
 <ul>
-  <div class="card-columns">
+  <div id= "page2" class="card-columns">
     <div class="rounded">
       <div class="card p-3" *ngFor='let qt of quotes2' style="background-color:aqua">
         <button type="button" class="close" aria-label="Close">
@@ -57,7 +39,7 @@
 
 <!-- page 3 -->
 <ul>
-  <div class="card-columns">
+  <div id= "page3" class="card-columns">
     <div class="rounded">
       <div class="card p-3" *ngFor='let qt of quotes3' style="background-color:aqua">
         <button type="button" class="close" aria-label="Close">
@@ -121,4 +103,26 @@
   <!-- </div> -->
 </ul>
 
+
+<!-- pagination area -->
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#!" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="page1!">1</a></li>
+    <li class="page-item"><a class="page-link" href="page2!">2</a></li>
+    <li class="page-item"><a class="page-link" href="page3!">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#!" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 <!-- <button (click) = 'quoteDelete(true)'> X </button> -->
