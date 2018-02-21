@@ -11,7 +11,8 @@ import { Quote } from './quote'
 })
 export class QuoteComponent implements OnInit {
       // quote:Quote;
-quotes = [{"quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"},
+      
+quotes1 = [{"quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"},
 {"quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill"},
 {"quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein"},
 {"quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.", "author": "Robert Frost"},
@@ -27,8 +28,10 @@ quotes = [{"quote": "Life isn’t about getting and having, it’s about giving 
 {"quote": "14.Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.", "author": "Mark Twain"},
 {"quote": "15.Life is 10% what happens to me and 90% of how I react to it.", "author": "Charles Swindoll"},
 {"quote": "The most common way people give up their power is by thinking they don’t have any.", "author": "Alice Walker"},
-{"quote": "The mind is everything. What you think you become.", "author": "Buddha"},
-{"quote": "The best time to plant a tree was 20 years ago. The second best time is now.", "author": "Chinese Proverb"},
+{"quote": "The mind is everything. What you think you become.", "author": "Buddha"}]
+
+
+quotes2 =[{"quote": "The best time to plant a tree was 20 years ago. The second best time is now.", "author": "Chinese Proverb"},
 {"quote": "An unexamined life is not worth living.", "author": "Socrates"},
 {"quote": "Eighty percent of success is showing up.", "author": "Woody Allen"},
 {"quote": "Your time is limited, so don’t waste it living someone else’s life.", "author": "Steve Jobs"},
@@ -44,8 +47,10 @@ quotes = [{"quote": "Life isn’t about getting and having, it’s about giving 
 {"quote": "The best revenge is massive success.", "author": "Frank Sinatra"},
 {"quote": "People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily.", "author": "Zig Ziglar"},
 {"quote": "Life shrinks or expands in proportion to one’s courage.", "author": "Anais Nin"},
-{"quote": "If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.", "author": "Vincent Van Gogh"},
-{"quote": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.", "author": "Aristotle"},
+{"quote": "If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.", "author": "Vincent Van Gogh"}]
+
+
+quotes3=[{"quote": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.", "author": "Aristotle"},
 {"quote": "Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.", "author": "Jesus"},
 {"quote": "The only person you are destined to become is the person you decide to be.", "author": "Ralph Waldo Emerson"},
 {"quote": "Go confidently in the direction of your dreams.  Live the life you have imagined.", "author": "Henry David Thoreau"},
@@ -61,8 +66,10 @@ quotes = [{"quote": "Life isn’t about getting and having, it’s about giving 
 {"quote": "Fall seven times and stand up eight.", "author": "Japanese Proverb"},
 {"quote": "When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.", "author": "Helen Keller"},
 {"quote": "Everything has beauty, but not everyone can see.", "author": "Confucius"},
-{"quote": "How wonderful it is that nobody need wait a single moment before starting to improve the world.", "author": "Anne Frank"},
-{"quote": "When I let go of what I am, I become what I might be.", "author": "Lao Tzu"},
+{"quote": "How wonderful it is that nobody need wait a single moment before starting to improve the world.", "author": "Anne Frank"}]
+
+
+quotes4=[{"quote": "When I let go of what I am, I become what I might be.", "author": "Lao Tzu"},
 {"quote": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.", "author": "Maya Angelou"},
 {"quote": "Happiness is not something readymade.  It comes from your own actions.", "author": "Dalai Lama"},
 {"quote": "If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.", "author": "Sheryl Sandberg"},
@@ -78,8 +85,10 @@ quotes = [{"quote": "Life isn’t about getting and having, it’s about giving 
 {"quote": "You take your life in your own hands, and what happens? A terrible thing, no one to blame.", "author": "Erica Jong"},
 {"quote": "What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.", "author": "Bob Dylan"},
 {"quote": "I didn’t fail the test. I just found 100 ways to do it wrong.", "author": "Benjamin Franklin"},
-{"quote": "In order to succeed, your desire for success should be greater than your fear of failure.", "author": "Bill Cosby"},
-{"quote": "A person who never made a mistake never tried anything new.", "author": " Albert Einstein"},
+{"quote": "In order to succeed, your desire for success should be greater than your fear of failure.", "author": "Bill Cosby"}]
+
+
+quotes5=[{"quote": "A person who never made a mistake never tried anything new.", "author": " Albert Einstein"},
 {"quote": "The person who says it cannot be done should not interrupt the person who is doing it.", "author": "Chinese Proverb"},
 {"quote": "There are no traffic jams along the extra mile.", "author": "Roger Staubach"},
 {"quote": "It is never too late to be what you might have been.", "author": "George Eliot"},
@@ -95,8 +104,10 @@ quotes = [{"quote": "Life isn’t about getting and having, it’s about giving 
 {"quote": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius"},
 {"quote": "If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.", "author": "Oprah Winfrey"},
 {"quote": "Remember that not getting what you want is sometimes a wonderful stroke of luck.", "author": "Dalai Lama"},
-{"quote": "You can’t use up creativity.  The more you use, the more you have.", "author": "Maya Angelou"},
-{"quote": "Dream big and dare to fail.", "author": "Norman Vaughan"},
+{"quote": "You can’t use up creativity.  The more you use, the more you have.", "author": "Maya Angelou"}]
+
+
+quotes6=[{"quote": "Dream big and dare to fail.", "author": "Norman Vaughan"},
 {"quote": "Our lives begin to end the day we become silent about things that matter.", "author": "Martin Luther King Jr."},
 {"quote": "Do what you can, where you are, with what you have.", "author": "Teddy Roosevelt"},
 {"quote": "If you do what you’ve always done, you’ll get what you’ve always gotten.", "author": "Tony Robbins"},

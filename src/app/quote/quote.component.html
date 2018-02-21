@@ -1,14 +1,14 @@
 <!-- FIRST SECTION -->
 
+
+<header>
   <div class="jumbotron">
-    <header>
-      <div class="content">
-        <div class="large-header">
-          <h1> My Quotes </h1>
-        </div>
-      </div>
-    </header>
+    <div class="large-header">
+      <h1> My Quotes </h1>
+    </div>
   </div>
+</header>
+
 
 <!-- Quotes display section -->
 <ul>
@@ -24,6 +24,8 @@
             <cite title="">{{qt.author}}</cite>
           </footer>
         </blockquote>
+        <a target="blank" [href] = "'https://twitter.com/intent/tweet?text='+ quote"
+        class="btn btn-outline-success" style="opacity:2"><i class="fa fa-twitter"></i></a>
       </div>
     </div>
   </div>

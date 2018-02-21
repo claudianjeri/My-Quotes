@@ -4,22 +4,21 @@ div.card {
   text-align: center;
 }
 
-.jumbotron {
+.jumbotron{
+    
   position: relative;
-  /* min-width: 100%; */
+  width: 100%;
+  height:100%;
   background: burlywood;
   overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  /* z-index: 1; */
-  display: block;
-  /* min-height: 100%; */
-  margin-bottom: 2%;
+  /* background-size: cover;
+  background-position: center center; */
+  z-index: 1;
+  /* display: block; */
 }
 
 h1{
-    position: relative;
-    text-decoration-style: wavy;
+    position: relative; 
     animation-name: h1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
