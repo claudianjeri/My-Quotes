@@ -1,5 +1,5 @@
 <!-- FIRST SECTION -->
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <header>
   <div class="jumbotron">
@@ -9,11 +9,10 @@
   </div>
 </header>
 
-<app-quote-form>
-  <a href="https://codepen.io/ARS" target="_blank">
-    <span>Create Quote</span>
-  </a>
-</app-quote-form>
+<div class="create">
+  <button type="button" label="Click" (click)="toggleChild()">Create Quote</button>
+  <div><app-quote-form [showMePartially]="showVar"></app-quote-form></div>
+</div>
 
 <!-- Quotes display section -->
 <!-- page 1 -->

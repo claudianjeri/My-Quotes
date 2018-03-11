@@ -10,7 +10,10 @@ import { Quote } from './quote';
 })
 export class QuoteComponent implements OnInit {
       // quote:Quote;
-      
+      showVar:boolean = false;
+      toggleChild(){
+        this.showVar = !this.showVar;
+      }
 
       quotes1 = [{"quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"},
       {"quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill"},

@@ -1,15 +1,17 @@
-<div id="form" class ="container-fluid">
+<div *ngIf="showMePartially" id="form" method="get" class ="container-fluid">
   <div class="row">
-    <form>
+    <form #quoteForm='ngForm'>
       <div class ="form-group">
         <label for ="quote"></label>
-        <input placeholder="Add Quote here" type="text" required class="form-control" id="name">
+        <textarea placeholder="Add Quote here" rows="4"  required class="form-control" id="quote"></textarea>
       </div>
 
       <div class="form-group">
         <label for ="author"> </label>
-        <textarea placeholder="Add Your Name" class ="form-control" id="description" rows="4" required></textarea>
+        <input placeholder="Add Your Name" type="text" class ="form-control" id="author"  required>
       </div>
+      <button type="submit">All Done! </button>
+      <button type="reset">Clear</button>
     </form>
   </div>
 </div>
